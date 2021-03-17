@@ -59,6 +59,7 @@ auth.onAuthStateChanged((user) => {
     btnLogin.classList.remove("hidden");
     btnRegister.classList.remove("hidden");
     formElement.classList.remove("hidden");
+    btnGoogle.classList.remove("hidden");
     btnLogout.classList.add("hidden");
     displayElement.innerHTML = "";
   }
