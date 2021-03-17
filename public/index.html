@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coba Firebase</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(174, 217, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .form-container {
+        width: 30vw;
+        background-color: rgb(85, 176, 255);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+
+      input {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 30px;
+      }
+
+      .btn {
+        width: calc(50% - 10px);
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        margin-bottom: 10px;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .display{
+        text-align: center;
+      }
+
+      .display img{
+        border-radius: 50%;
+        border: 2px solid white;
+      }
+
+      .display .nama{
+        font-weight: bold;
+        font-size: 30px;
+        color: white;
+      }
+
+      .display .email{
+        color: rgb(228, 228, 228);
+        font-size: 20px;
+      }
+
+      #logout{
+         margin: 20px 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="display"></div>
+      <form action="" class="form">
+        <input type="email" name="" id="email" placeholder="Masukan email" />
+        <input
+          type="password"
+          name=""
+          id="password"
+          placeholder="Masukkan Password"
+          type="password"
+        />
+        <button class="btn" id="register">Register</button>
+        <button class="btn" id="login">Login</button>
+      </form>
+      <button class="btn hidden" id="logout">Logout</button>
+      <button class="btn" id="google">Google Sign In</button>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/authentication.js"></script>
+    <script src="./scripts/button.js"></script>
+  </body>
+</html>
